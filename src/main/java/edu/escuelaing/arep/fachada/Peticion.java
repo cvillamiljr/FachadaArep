@@ -9,15 +9,14 @@ import com.mashape.unirest.http.exceptions.UnirestException;
 
             HttpResponse<String> response = null;
             try {
-                response = Unirest.get("https://trigcalculator.herokuapp.com/calculate?operation"+operation+"&number="+number)
+                response = Unirest.get("https://trigcalculator.herokuapp.com/calculate?operation="+operation+"&number="+number)
                         .asString();
             } catch (UnirestException e) {
                 e.printStackTrace();
             }
-
+            System.out.println(response.getBody());
             return response.getBody();
-
-
+            
 
         }
 }
