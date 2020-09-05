@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -Dserver.port=$PORT -cp target/classes:target/dependency/* edu.eci.escuelaing.arep.Cliente
+web: java $JAVA_OPTS -Dserver.port=$PORT -cp target/classes:target/dependency/* edu.eci.escuelaing.arep.Fachada
