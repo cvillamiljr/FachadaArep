@@ -8,7 +8,7 @@ public class Cliente {
     public static void main(String[] args) {
         HttpResponse<String> response = null;
         try {
-            response = Unirest.get("https://fachadacesar.herokuapp.com/results?operation=tan&number=1")
+            response = Unirest.get("https://fachada-cesar.herokuapp.com/results?operation=tan&number=1")
                     .asString();
         } catch (UnirestException e) {
             e.printStackTrace();
